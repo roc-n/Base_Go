@@ -1,6 +1,7 @@
 package main
 
-import "algorithm.labmem.net/ds"
+import "algorithm.labmem.net/al"
+
 func main() {
 	// ds.Array()
 
@@ -11,19 +12,24 @@ func main() {
 	// 	fmt.Println(x)
 	// }
 
-	ds.ListDemo()
+	// ds.ListDemo()
+
+	// 算法集合
+	// al.BS()
+	al.PermutationsIDemo()
+
 }
 
-func nextInt(b []byte, i int) (value, nextPos int) {
-	for ; i < len(b) && !isDigit(b[i]); i++ {
-	}
-	x := 0
-	for ; i < len(b) && isDigit(b[i]); i++ {
-		x = x*10 + int(b[i]) - '0'
-	}
-	return x, i
-}
+// func nextInt(b []byte, i int) (value, nextPos int) {
+// 	for ; i < len(b) && !isDigit(b[i]); i++ {
+// 	}
+// 	x := 0
+// 	for ; i < len(b) && isDigit(b[i]); i++ {
+// 		x = x*10 + int(b[i]) - '0'
+// 	}
+// 	return x, i
+// }
 
-func isDigit(b byte) bool {
-	return b >= '0' && b <= '9'
-}
+// func isDigit(b byte) bool {
+// 	return b >= '0' && b <= '9'
+// }
