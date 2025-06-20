@@ -1,6 +1,8 @@
 package main
 
-import "algorithm.labmem.net/al"
+import (
+	"algorithm.labmem.net/al"
+)
 
 func main() {
 	// ds.Array()
@@ -16,8 +18,11 @@ func main() {
 
 	// 算法集合
 	// al.BS()
-	al.PermutationsIDemo()
-
+	// al.PermutationsIDemo()
+	// result := common.Fibonacci(5)
+	// fmt.Println(result)
+	al.SortDemo()
+	// al.GreedyDemo()
 }
 
 // func nextInt(b []byte, i int) (value, nextPos int) {
